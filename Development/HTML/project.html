@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="images/foodie.jpg" style="height:px; width:px">
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Brown Sugar Salmon</h2>
+      <h5>Title description, Oct 28, 2021</h5>
+      <img src="images/fish.jpg" style="height:350px; width:500px">
+      <p>DELICIOUS!!</p>
+      <p>This fish was pretty good. I'm a terrible blogger. Eat it or don't, who cares!</p>
+    </div>
+    <div class="card">
+      <h2>FlapJacks</h2>
+      <h5>Title description, Oct 27, 2021</h5>
+      <img src="images/flapjack.jpg" style="height:300px;width:500px">
+      <p>AMAZING!!</p>
+      <p>Who doesn't like pancakes? GTFOH, they great! filler text filler text blah blah blah. Blog stuff yeah!</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="images/mrblogger1.jpg" style="height:px; width:px">
+      <p>Hi My name is Mr.Blogger! I'm very terrible at describing food so follow me for all the worst reviews!!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <img src="images/facebook.jpg" style="height:25px;width:25px">
+      <img src="images/insta.jpg" style="height:25px;width:25px"> 
+      <img src="images/twitter.jpg" style="height:25px;width:25px"> 
+      <img src="images/snapchat.jpg" style="height:25px;width:25px"> 
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
